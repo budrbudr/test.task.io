@@ -1,0 +1,31 @@
+.header {
+    width: 1200px;
+    height: 65px;
+    background: #f4f4f4;
+    margin: 83px auto;
+}
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.filter__item {
+    display: flex;
+}
+input {
+    display: block;
+}
+.content {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.content-block {
+    border: 1px solid black;
+    width: 17.4%;
+    height: 361px;
+}
