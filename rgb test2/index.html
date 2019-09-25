@@ -2,29 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="description" content="WebDev" />
+    <meta name="keywords" content="HTML,CSS,JavaScript" />
+    <meta name="author" content="Vlad Budrikis" />
+    <title>RGB test 2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="header">
     <div class="filter">
-        <div class="filter__item"><input class="filter__input" type="checkbox">Смартфоны</div>
-        <div class="filter__item"><input class="filter__input" type="checkbox">Планшеты/Ноутбуки</div>
-        <div class="filter__item"><input class="filter__input" type="checkbox">Часы</div>
-        <div class="filter__item"><input class="filter__input" type="checkbox">Аксессуары</div>
-        <div class="filter__item"><input class="filter__input" type="checkbox">Другое</div>
+        <div class="filter__item"><input class="filter__input" type="checkbox" id="phone">Смартфоны</div>
+        <div class="filter__item"><input class="filter__input" type="checkbox" id="laptop">Планшеты/Ноутбуки</div>
+        <div class="filter__item"><input class="filter__input" type="checkbox" id="watch">Часы</div>
+        <div class="filter__item"><input class="filter__input" type="checkbox" id="accessories">Аксессуары</div>
+        <div class="filter__item"><input class="filter__input" type="checkbox" id="etc">Другое</div>
     </div>
 </header>
+
+<section class="modal">
+    <div class="overlay">
+        <div class="popup">
+            <div class="popup-header"><span class="popup-header__text">IPhone 5</span></div>
+            <div class="popup-content">
+                <div class="popup-content-img">
+                    <img class="popup__img" src="./img/iphone.png" alt="iphone">
+                </div>
+                <div class="popup-content-form">
+                    <form action="">
+                        <div class="popup-form-group">
+                            <div class="popup-content-form__label"><label for="memory">Память</label></div>
+                            <select name="memory" id="memory">
+                                <option value="64">64Gb</option>
+                                <option value="32">32Gb</option>
+                            </select>
+                            <div class="popup-content-form__label"><label for="count">Количество</label></div>
+                            <select name="memory" id="count">
+                                <option value="1">1</option>
+                            </select>
+                            <div class="popup-form-group">
+                                <div class="popup-price-block"><span class="popup__price">$519<sup>.00</sup></span>
+                                </div>
+                                <div class="popup-button-block">
+                                    <button class="popup__button content__button">Купить</button>
+                                </div>
+                                <div class="popup-text-block">
+                                    <p class="popup__text">Посмотреть в магазине</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-form-group">
+                            <div class="popup-content-form__label"><label for="color">Цвет</label></div>
+                            <select name="memory" id="color">
+                                <option value="white">Белый</option>
+                                <option value="black">Черный</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="close-popup"></div>
+        </div>
+    </div>
+</section>
+
 <main class="content">
-    <div class="content-block"></div>
-    <div class="content-block"></div>
-    <div class="content-block"></div>
-    <div class="content-block"></div>
-    <div class="content-block"></div>
-    <div class="content-block"></div>
-    <div class="content-block"></div>
-    <div class="content-block"></div>
+    <div class="content-block">
+        <div class="content-block-img"><img class="content__img" src="./img/iphone.png" alt="iphone"></div>
+        <div class="content-block-title"><span class="content__text">sadsads</span></div>
+        <div class="content-block-price"><span class="content__price">100<sup>.00</sup></span></div>
+        <div class="content-block-btn">
+            <button class="content__button">Купить</button>
+        </div>
+    </div>
 </main>
+
+
+<!--<script
+        src="https://code.jquery.com/jquery-3.4.1.slim.js"
+        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+        crossorigin="anonymous"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <script src="js.js"></script>
 </body>

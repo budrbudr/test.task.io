@@ -20,14 +20,15 @@ $('.close-popup').click(function () {
 
 
 ///send massage
+/*
 $("#send-form").submit(function(e){
     e.preventDefault();
     $.ajax({
         type: "POST",
-        url: "wdh_send_form.php",
+        url: "send_form.php",
         data: $("#send-form").serialize(),
         success: function(data) {
             $("#wdh_result_form").html(data);
         }
     });
-});
+});*/
