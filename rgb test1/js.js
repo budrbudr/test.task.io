@@ -20,7 +20,6 @@ $('.close-popup').click(function () {
 
 
 ///send massage
-/*
 $("#send-form").submit(function(e){
     e.preventDefault();
     $.ajax({
@@ -31,4 +30,4 @@ $("#send-form").submit(function(e){
             $("#wdh_result_form").html(data);
         }
     });
-});*/
+});

@@ -11,17 +11,32 @@
 <body>
 <header class="header">
     <div class="filter">
-        <div class="filter__item"><input class="filter__input" type="checkbox" id="phone">Смартфоны</div>
-        <div class="filter__item"><input class="filter__input" type="checkbox" id="laptop">Планшеты/Ноутбуки</div>
-        <div class="filter__item"><input class="filter__input" type="checkbox" id="watch">Часы</div>
-        <div class="filter__item"><input class="filter__input" type="checkbox" id="accessories">Аксессуары</div>
-        <div class="filter__item"><input class="filter__input" type="checkbox" id="etc">Другое</div>
+        <div class="filter__item">
+            <input class="filter__input" type="checkbox" id="phone">
+            <label for="phone">Смартфоны</label>
+        </div>
+        <div class="filter__item">
+            <input class="filter__input" type="checkbox" id="laptop">
+            <label for="laptop">Планшеты/Ноутбуки</label>
+        </div>
+        <div class="filter__item">
+            <input class="filter__input" type="checkbox" id="watch">
+            <label for="watch">Часы</label>
+        </div>
+        <div class="filter__item">
+            <input class="filter__input" type="checkbox" id="accessories">
+            <label for="accessories">Аксессуары</label>
+        </div>
+        <div class="filter__item">
+            <input class="filter__input" type="checkbox" id="etc">
+            <label for="etc">Другое</label>
+        </div>
     </div>
 </header>
 
 <section class="modal">
-    <div class="overlay">
-        <div class="popup">
+    <div id="overlay">
+       <!-- <div class="popup">
             <div class="popup-header"><span class="popup-header__text">IPhone 5</span></div>
             <div class="popup-content">
                 <div class="popup-content-img">
@@ -61,28 +76,28 @@
                 </div>
             </div>
             <div class="close-popup"></div>
-        </div>
+        </div>-->
     </div>
 </section>
 
 <main class="content">
-    <div class="content-block">
+    <!--<div class="content-block">
         <div class="content-block-img"><img class="content__img" src="./img/iphone.png" alt="iphone"></div>
         <div class="content-block-title"><span class="content__text">sadsads</span></div>
         <div class="content-block-price"><span class="content__price">100<sup>.00</sup></span></div>
         <div class="content-block-btn">
             <button class="content__button">Купить</button>
         </div>
-    </div>
+    </div>-->
 </main>
 
+<footer>
+    <div class="footer-block">
+        <span class="footer__text"><sup class="footer__text__sup">*</sup>  Указанные цены включают стоимость товара и доставки</span>
+    </div>
+</footer>
 
-<!--<script
-        src="https://code.jquery.com/jquery-3.4.1.slim.js"
-        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
-        crossorigin="anonymous"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
 <script src="js.js"></script>
 </body>
 </html>

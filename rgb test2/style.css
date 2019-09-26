@@ -36,6 +36,8 @@ input {
     display: block;
 }
 
+
+
 .content {
     width: 1200px;
     display: flex;
@@ -52,6 +54,7 @@ input {
     align-items: center;
     justify-content: space-around;
     box-shadow: -1px 0px 9px -1px rgba(0, 0, 0, 0.75);
+    margin: 20px 30px 20px 20px;
 }
 
 .content__text {
@@ -83,8 +86,8 @@ input {
 }
 
 
-.overlay {
-    position: absolute;
+#overlay {
+    position: fixed;
     width: 100%;
     height: 100vh;
     top: 0;
@@ -97,7 +100,7 @@ input {
     /*display: flex;
     flex-direction: row;
     flex-wrap: wrap;*/
-    position: absolute;
+    position: fixed;
     width: 689px;
     height: 360px;
     left: 50%;
@@ -199,4 +202,15 @@ sup {
 }
 .popup__text {
     color: #ff7e00;
+}
+.footer-block{
+    margin: 30px auto;
+    width: 40%;
+}
+.footer__text {
+    color: #939393;
+}
+.footer__text__sup {
+    color: #ff7e00;
+    font-size: 130%;
 }
